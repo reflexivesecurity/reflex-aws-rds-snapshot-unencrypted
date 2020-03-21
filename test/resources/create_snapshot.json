@@ -1,0 +1,64 @@
+{
+    "version": "0",
+    "id": "1a121482-cf38-9805-637f-84eded1aace9",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.rds",
+    "account": "000000000000",
+    "time": "2020-03-19T01:31:50Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+        "eventVersion": "1.05",
+        "userIdentity": {
+            "type": "IAMUser",
+            "principalId": "AIDAFFFFFFFFFFFFFFFFF",
+            "arn": "arn:aws:iam::000000000000:user/example.user",
+            "accountId": "000000000000",
+            "accessKeyId": "ASIAFFFFFFFFFFFFFFFF",
+            "userName": "example.user",
+            "sessionContext": {
+                "attributes": {
+                    "mfaAuthenticated": "true",
+                    "creationDate": "2020-03-18T22:24:53Z"
+                }
+            },
+            "invokedBy": "signin.amazonaws.com"
+        },
+        "eventTime": "2020-03-19T01:31:50Z",
+        "eventSource": "rds.amazonaws.com",
+        "eventName": "CreateDBSnapshot",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "127.0.0.1",
+        "userAgent": "signin.amazonaws.com",
+        "requestParameters": {
+            "dBSnapshotIdentifier": "test-db-1",
+            "dBInstanceIdentifier": "database-1"
+        },
+        "responseElements": {
+            "dBSnapshotIdentifier": "test-db-1",
+            "dBInstanceIdentifier": "database-1",
+            "engine": "postgres",
+            "allocatedStorage": 20,
+            "status": "creating",
+            "port": 5432,
+            "availabilityZone": "us-east-1f",
+            "vpcId": "vpc-FFFFFFFF",
+            "instanceCreateTime": "Mar 19, 2020 1:21:40 AM",
+            "masterUsername": "postgres",
+            "engineVersion": "11.5",
+            "licenseModel": "postgresql-license",
+            "snapshotType": "manual",
+            "optionGroupName": "default:postgres-11",
+            "percentProgress": 0,
+            "storageType": "gp2",
+            "encrypted": false,
+            "dBSnapshotArn": "arn:aws:rds:us-east-1:000000000000:snapshot:test-db-1",
+            "iAMDatabaseAuthenticationEnabled": false,
+            "processorFeatures": [],
+            "dbiResourceId": "db-DSNZGKWRQBNZGQ7SVOHRY2TWUE"
+        },
+        "requestID": "bdabeb0c-aa48-4301-a741-b82a1294d1df",
+        "eventID": "7a1783ed-b27d-4a91-80f0-0ea9ec1ef37c",
+        "eventType": "AwsApiCall"
+    }
+}
